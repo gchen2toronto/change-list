@@ -81,6 +81,9 @@ page417
 report sql query error . recreate report region
 
 
+SYNONYM tax_encroachment_view not working in production database
+
+
 
 
 
