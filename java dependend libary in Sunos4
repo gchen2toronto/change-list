@@ -1,0 +1,36 @@
+
+
+ call in sql tools 
+ 
+ CALL DBMS_JAVA.SET_OUTPUT(1000000);
+Declare
+  v_Ret Varchar2(4000);
+BEGIN
+
+  v_Ret := APEX_JAVA_PROCEDURE.Host_RunCMD('ldd /usr/bin/java');
+  Dbms_Output.put_line(v_Ret);
+
+  v_Ret := APEX_JAVA_PROCEDURE.Host_RunCMD('java -version');
+  Dbms_Output.put_line(v_Ret);
+End;
+
+
+
+correct result 
+
+Line Pos Text                                                            
+1        Call method, executed in 3 ms                                   
+2        PL/SQL block, executed in 811 ms                                
+         stdout: 	libthread.so.1 =>	 /lib/libthread.so.1                 
+         stdout: 	libjli.so =>	 /usr/lib/libjli.so                       
+         stdout: 	libdl.so.1 =>	 /lib/libdl.so.1                         
+         stdout: 	libc.so.1 =>	 /lib/libc.so.1                           
+         stdout: 	libm.so.2 =>	 /lib/libm.so.2                           
+                                                                         
+         stderr: java version "1.6.0_45"                                 
+         stderr: Java(TM) SE Runtime Environment (build 1.6.0_45-b06)    
+         stderr: Java HotSpot(TM) Server VM (build 20.45-b01, mixed mode)
+                                                                         
+         Total execution time 840 ms                                     
+
+
