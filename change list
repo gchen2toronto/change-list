@@ -110,6 +110,8 @@ no renew notice template in letter template table qa env
 
 page 802 has sql error due to mapareal table structure changed , can not fix
 
+load getinfo.jpg to workspace production
+
 
 
 
