@@ -114,6 +114,10 @@ load getinfo.jpg to workspace production
 
 upload manual doc files to workspace in production
 
+page 601 go.gif add #IMAGE_PREFIX#  in production , need change it in qa dev later
+
+update contacte information in application 140 properties
+
 
 
 
