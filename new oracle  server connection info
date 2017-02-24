@@ -5,5 +5,10 @@ port
 
 verify:
 select sys_context('userenv','instance_name') from dual
+select sys_context('userenv','service_name') from dual;
+
 SELECT sys_context('USERENV', 'SID') FROM DUAL; 
 select sys_context('USERENV','SERVER_HOST') from dual
+
+select * from global_name;
+
