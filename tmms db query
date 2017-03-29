@@ -1,0 +1,9 @@
+              Select to_char(PROCESS_TIME, 'YYYY-MM-DD HH24:MI:SS') as PROCESS_TIME, 
+	    Decode(XML_TYPE, 'I', 'In', 'O', 'Out', ' ') as XML_TYPE, 
+	    Replace(XML_DATA, '><', '>' || chr(10) || '<') as XML_DATA, XML_ID 
+	    From METRO.MOBILE_XML 
+	    Where to_char(PROCESS_TIME ,'yyyy-mm-dd') = '2016-06-28' Order by XML_ID desc;	
+      
+      
+      
+      SELECT * FROM metro.mobile_costsheet   WHERE report_no =''   ORDER BY 1 desc
