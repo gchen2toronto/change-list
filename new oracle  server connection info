@@ -10,5 +10,8 @@ select sys_context('userenv','service_name') from dual;
 SELECT sys_context('USERENV', 'SID') FROM DUAL; 
 select sys_context('USERENV','SERVER_HOST') from dual
 
+ select sys_context('userenv','service_name') as serviceName ,sys_context('userenv','host') as clientHost from dual
+
+
 select * from global_name;
 
