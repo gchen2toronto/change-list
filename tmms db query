@@ -3,6 +3,15 @@
 	    Replace(XML_DATA, '><', '>' || chr(10) || '<') as XML_DATA, XML_ID 
 	    From METRO.MOBILE_XML 
 	    Where to_char(PROCESS_TIME ,'yyyy-mm-dd') = '2016-06-28' Order by XML_ID desc;	
+	    
+	    
+	    
+	                                            Select to_char(PROCESS_TIME, 'YYYY-MM-DD HH24:MI:SS') as PROCESS_TIME, 
+	    Decode(XML_TYPE, 'I', 'In', 'O', 'Out', ' ') as XML_TYPE, 
+	    Replace(XML_DATA, '><', '>' || chr(10) || '<') as XML_DATA, XML_ID 
+	    From METRO.MOBILE_XML 
+	    Where  xml_data LIKE '%0001-17NY-118TR%' Order by XML_ID desc;	
+
       
       
       
