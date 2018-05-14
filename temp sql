@@ -1,0 +1,3 @@
+UPDATE  metro.mobile_wscode 
+SET description =   'Another Standby report already exist for the date <date>, with WO <workOrderNo> and bid item <bidItemNo> in another report #<reportNo>.'
+WHERE msg_code ='U441';
