@@ -1,0 +1,25 @@
+UPDATE ssrs.snowarea SET supervisor = 'Keith Leblanc' , supervisorid =2188  WHERE snowarea IN ('SW01', 'SW02', 'SW03', 'SW04', 'SW05', 'SW06'); 
+  
+UPDATE ssrs.snowarea SET supervisor = 'Jim Jones' , supervisorid =2119 WHERE snowarea IN ('SW07', 'SW08', 'SW09', 'SW10', 'SW11', 'SW12', 'SW13'); 
+
+UPDATE ssrs.snowarea SET supervisor = 'Sam Attardi' , supervisorid =2032  WHERE snowarea IN ('NES1', 'NES2', 'NWS1', 'NWS2', 'NWS3', 'NWS4', 'SW19', 'SW20', 'SW21');
+
+UPDATE ssrs.snowarea SET supervisor = 'Michael Stinson' , supervisorid =2196  WHERE snowarea IN ('EY16', 'EY17', 'EY18', 'EY19' ); 
+
+UPDATE ssrs.snowarea SET supervisor = 'Chris Bagiamis' , supervisorid =2026  WHERE snowarea IN ('ES14', 'ES15', 'ES16' ); 
+
+UPDATE ssrs.snowarea SET supervisor = 'Dave Bolton' , supervisorid =2235  WHERE snowarea IN ('ES01', 'ES02', 'ES03', 'ES04', 'SW14', 'SW15', 'SW16', 'SW17', 'SW18' ); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
