@@ -1,0 +1,5 @@
+select   user_name,role_name from   osar_sec_user_role s, osar_sec_roles r, users u,osar_sec_users su
+where u.user_id=su.user_name and r.role_id=s.role_id and 
+su.user_id=s.user_id and upper(role_name)= 'ADMIN' and upper(user_name) = upper(:APP_USER)
+
+exist
