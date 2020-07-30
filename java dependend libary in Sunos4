@@ -1,7 +1,7 @@
 
 
  call in sql tools 
- 
+ sara
  CALL DBMS_JAVA.SET_OUTPUT(1000000);
 Declare
   v_Ret Varchar2(4000);
@@ -11,6 +11,21 @@ BEGIN
   Dbms_Output.put_line(v_Ret);
 
   v_Ret := APEX_JAVA_PROCEDURE.Host_RunCMD('java -version');
+  Dbms_Output.put_line(v_Ret);
+End;
+
+ospa
+  CALL DBMS_JAVA.SET_OUTPUT(1000000);
+Declare
+  v_Ret Varchar2(4000);
+BEGIN
+
+--  v_Ret := osppa_java_procedure.Host_RunCMD('ldd /usr/bin/java');
+--  Dbms_Output.put_line(v_Ret);
+  ospa_interface_ipm.ospa_printpermit('202006970001','IT','NEXT');
+
+
+  v_Ret := osppa_java_procedure.Host_RunCMD('java');
   Dbms_Output.put_line(v_Ret);
 End;
 
